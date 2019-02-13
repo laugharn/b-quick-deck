@@ -1,6 +1,6 @@
 # b quick
 
-### A toolchain for faster, easier, and less complex JavaScript development.
+### You don't have to deal with ~~the dealers~~ complexity, let your ~~boyfriend~~ toolchain deal with ~~the dealers~~ complexity.
 
 January 15, 2019
 ---
@@ -8,20 +8,30 @@ January 15, 2019
 
 * Yarn Workspaces
 * Next.js
-* Hooks
+* React Hooks
 * Tailwind
 * purgeCSS
 * Zeit Now
----
-## Philosophy
-
-Complexity and fragility are the enemy.
 ---
 ## Yarn Workspaces
 
 ### JavaScript monorepos made easy...er.
 
 https://yarnpkg.com/lang/en/docs/workspaces/
+---
+## Why Yarn?
+
+* Workspaces make local development easy
+* Faster than NPM
+* Works well with Lerna
+* `yarn dev` instead of `npm run dev` saves me four characters
+---
+## Why Not Yarn?
+
+* No individual package lock files
+* Accidentally running npm out of habit
+* Yarn global isn't reliable compared to NPM
+* Do you trust Facebook?
 ---
 ## Next.js
 
@@ -32,15 +42,53 @@ https://nextjs.org
 ## Why Next.js
 
 * The universe arcs towards frameworks
-* Server-Side Rendering (SSR)
-* HMR, Webpack, Babel, env variables, etc.
+* Server-side Rendering (SSR)
+* Sensible but extensible Webpack, Babel, etc.
+* Dynamic or static output
 * Robust ecosystem
+* Lambda optimized
+* Big boy validated (Hulu, Netflix, Walmart, Tencent)
 ---
-## Hooks
+## Why Not Next.js
 
-### RIP Lifecycle
+* You don't like frameworks
+* No need for SSR
+* Dynamic routing is tricky
+* Files like _app.js and _document.js are still a little magical
+* Your local dev and production dev will likely not be 1:1
 ---
-## Hooks Demos
+## Next.js Demos
+
+* Pages
+* next.config.js
+* With Express
+---
+## Pages
+---
+## next.config.js
+---
+## With Express
+---
+## React Hooks
+
+### Imagine the Drake meme and he doesn't like classes but he does like functions
+
+https://reactjs.org/docs/hooks-intro.html
+---
+## Why React Hooks?
+
+* Functional components can behave statefully
+* Code is much easier to read
+* State functionality can easily be shared
+* Effects can be bound more explicitly
+* Can be implemented incrementally
+---
+## Why Not React Hooks?
+
+* Easy to be used improperly
+* Writing effects for event emitters can be awkward
+---
+## React Hooks Demos
 
 * useState
 * useReducer
@@ -96,16 +144,51 @@ export default () => {
 ```
 ---
 ## Tailwind
+
+### Configuration-based utility classes
+
+https://tailwindcss.com
+---
+## Why Tailwind?
+
+* Utility classes are easy to understand and write
+* BEM fails/gets too complex without orthodoxy
+* CSS-in-JS is difficult to share/handle states
+* Active community with a full-time maintainer
+---
+## Why not Tailwind?
+
+* Global, not component-based solution
+* Without a build process, can result in a very large library
+* @apply doesn't work as well as you want it to
 ---
 ## purgeCSS
 
 ### Marie Kondo for your stylesheets
+
+https://www.purgecss.com/
 ---
 ## Why purgeCSS?
 
 * What treeshaking does for JavaScript, purgeCSS does for CSS
 * Don't worry about how big your library is
 ---
+## Why not purgeCSS?
+
+* Requires writing configuration
+* Configuration can get complicated with dynamic class values
+---
 ## Zeit Now
 
-### Hosting you want, kinda
+### Lambdas made easy
+
+https://zeit.co/now
+---
+## Why Zeit Now?
+---
+## Why Not Zeit Now?
+---
+## Thanks
+
+* https://github.com/laugharn/b-quick
+* https://github.com/laugharn/b-quick-deck
