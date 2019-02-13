@@ -1,0 +1,111 @@
+# b quick
+
+### A toolchain for faster, easier, and less complex JavaScript development.
+
+January 15, 2019
+---
+## Tools Discussed
+
+* Yarn Workspaces
+* Next.js
+* Hooks
+* Tailwind
+* purgeCSS
+* Zeit Now
+---
+## Philosophy
+
+Complexity and fragility are the enemy.
+---
+## Yarn Workspaces
+
+### JavaScript monorepos made easy...er.
+
+https://yarnpkg.com/lang/en/docs/workspaces/
+---
+## Next.js
+
+### A React framework that Just Works
+
+https://nextjs.org
+---
+## Why Next.js
+
+* The universe arcs towards frameworks
+* Server-Side Rendering (SSR)
+* HMR, Webpack, Babel, env variables, etc.
+* Robust ecosystem
+---
+## Hooks
+
+### RIP Lifecycle
+---
+## Hooks Demos
+
+* useState
+* useReducer
+* useEffect
+* Final Form
+---
+## useState
+
+### Get reactive, stateful values without classes
+
+```js
+export default () => {
+    const [count, setCount] = useState(0)
+
+    return <button onClick={e => setCount(count + 1)}>{count}</button>
+}
+```
+---
+## useReducer
+
+### If you love Redux for some reason
+
+```js
+const counterReducer = (state, action) => {
+    // Imagine a reducer here
+}
+
+export default ()=> {
+    const [state, dispatch] = useReducer(counterReducer, 0)
+
+    // Imagine buttons that dispatch actions
+}
+```
+---
+## useEffect
+---
+## Final Form
+
+### How third parties are using hooks
+
+```js
+export default () => {
+    const { form, handleSubmit, pristine, submitting, values } = useForm({
+        onSubmit, // A submit function
+        validate // A validator
+    })
+
+    const firstName = useField('username', form)
+    const lastName = useField('password', form)
+
+    // Imagine a form
+}
+```
+---
+## Tailwind
+---
+## purgeCSS
+
+### Marie Kondo for your stylesheets
+---
+## Why purgeCSS?
+
+* What treeshaking does for JavaScript, purgeCSS does for CSS
+* Don't worry about how big your library is
+---
+## Zeit Now
+
+### Hosting you want, kinda

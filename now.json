@@ -1,0 +1,8 @@
+{
+    "alias": "quick-deck.this.sh",
+    "builds": [
+        { "src": "index.mdx", "use": "@now/mdx-deck" }
+    ],
+    "name": "quick-deck",
+    "version": 2
+}

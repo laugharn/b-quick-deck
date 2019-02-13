@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "mdx-deck": "^1.8.2"
+  },
+  "name": "quick-deck",
+  "private": true,
+  "scripts": {
+    "dev": "mdx-deck index.mdx"
+  },
+  "version": "0.0.0"
+}
