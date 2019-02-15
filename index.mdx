@@ -1,10 +1,8 @@
 # Quick
 
-### You don't have to deal with ~~the dealers~~ complexity, let your ~~boyfriend~~ toolchain deal with ~~the dealers~~ complexity.
+### January 15, 2019
 
-https://quick-deck.this.sh
-
-January 15, 2019
+Follow along at home on https://quick-deck.this.sh
 ---
 ## Tools Discussed
 
@@ -15,25 +13,38 @@ January 15, 2019
 * purgeCSS
 * Zeit Now
 ---
+## What These Tools Have in Common
+
+You don't have to deal with ~~the dealers~~ complexity, let your ~~boyfriend~~ toolchain deal with ~~the dealers~~ complexity.
+---
+## complexity = fragility = time
+---
 ## Yarn Workspaces
 
 ### JavaScript monorepos made easy...er.
 
 https://yarnpkg.com/lang/en/docs/workspaces/
 ---
-## Why Yarn?
+## Why Yarn Workspaces?
 
-* Workspaces make local development easy
+* Workspaces make local development/co-dependency easy
 * Faster than NPM
 * Works well with Lerna
-* `yarn dev` instead of `npm run dev` saves me four characters
 ---
-## Why Not Yarn?
+## Why Not Yarn Workspaces?
 
 * No individual package lock files
 * Accidentally running npm out of habit
-* Yarn global isn't reliable compared to NPM
 * Do you trust Facebook?
+---
+## Yarn Workspace Demos
+
+* Dependencies
+* Hot Module Reloading (HMR)
+---
+## Dependencies
+---
+## Hot Module Reloading
 ---
 ## Next.js
 
@@ -62,10 +73,13 @@ https://nextjs.org
 ## Next.js Demos
 
 * Pages
+* Server-Side Rendering
 * next.config.js
 * With Express
 ---
 ## Pages
+---
+## Server-Side Rendering
 ---
 ## next.config.js
 ---
@@ -100,50 +114,16 @@ https://reactjs.org/docs/hooks-intro.html
 ## useState
 
 ### Get reactive, stateful values without classes
-
-```js
-export default () => {
-    const [count, setCount] = useState(0)
-
-    return <button onClick={e => setCount(count + 1)}>{count}</button>
-}
-```
 ---
 ## useReducer
 
 ### If you love Redux for some reason
-
-```js
-const counterReducer = (state, action) => {
-    // Imagine a reducer here
-}
-
-export default ()=> {
-    const [state, dispatch] = useReducer(counterReducer, 0)
-
-    // Imagine buttons that dispatch actions
-}
-```
 ---
 ## useEffect
 ---
 ## Final Form
 
 ### How third parties are using hooks
-
-```js
-export default () => {
-    const { form, handleSubmit, pristine, submitting, values } = useForm({
-        onSubmit, // A submit function
-        validate // A validator
-    })
-
-    const firstName = useField('username', form)
-    const lastName = useField('password', form)
-
-    // Imagine a form
-}
-```
 ---
 ## Tailwind
 
@@ -164,6 +144,8 @@ https://tailwindcss.com
 * Without a build process, can result in a very large library
 * Naming convention for some classes takes getting used to
 ---
+## Tailwind Demo
+---
 ## purgeCSS
 
 ### Marie Kondo for your stylesheets
@@ -180,6 +162,8 @@ https://www.purgecss.com/
 * Requires writing configuration
 * Configuration can get complicated with dynamic class values
 ---
+## purgeCSS Demo
+---
 ## Zeit Now
 
 ### Lambdas made easy
@@ -189,7 +173,15 @@ https://zeit.co/now
 ## Why Zeit Now?
 
 * Lambdas with minimal work
+* Dead simple, idempotent releases
+* GitHub integration, robust command line
 ---
 ## Why Not Zeit Now?
+
+* Platform lock-in
+* Are not great in disasters
+* The Chainsmokers are using it (https://twitter.com/rauchg/status/1096172975261282305)
+---
+## Zeit Now Demo
 ---
 ## Thanks
